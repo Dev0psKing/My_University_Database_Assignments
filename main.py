@@ -14,4 +14,3 @@ if __name__ == '__main__':
     print_hi('Frined'
              '')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
