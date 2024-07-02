@@ -1,0 +1,283 @@
+<mxfile>
+  <diagram name="Advanced E-commerce ER Diagram">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Customer Entity -->
+        <mxCell id="2" value="Customer" style="swimlane;html=1;fillColor=#D6E4F2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="CustomerID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="FirstName" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="LastName" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Email" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="PhoneNumber" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Address" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="180" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Password (hashed)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="210" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="CustomerType" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="2">
+          <mxGeometry y="240" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Product Entity -->
+        <mxCell id="11" value="Product" style="swimlane;html=1;fillColor=#D6E4F2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="ProductID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Name" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Description" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Price" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Stock" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="CategoryID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="180" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Brand" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="210" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Manufacturer" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="11">
+          <mxGeometry y="240" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Order Entity -->
+        <mxCell id="20" value="Order" style="swimlane;html=1;fillColor=#D6E4F2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="320" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="OrderID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="OrderDate" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="TotalAmount" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="ShippingAddress" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="ShippingMethod" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="Status" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="180" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="CustomerID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="20">
+          <mxGeometry y="210" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- OrderItem Entity -->
+        <mxCell id="28" value="OrderItem" style="swimlane;html=1;fillColor=#C6E4C4;" vertex="1" parent="1">
+          <mxGeometry x="260" y="320" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="OrderItemID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="28">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="OrderID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="28">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="ProductID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="28">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="Quantity" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="28">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="Discount" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="28">
+          <mxGeometry y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Entity -->
+        <mxCell id="34" value="Payment" style="swimlane;html=1;fillColor=#FFD5B4;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="PaymentID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="34">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="OrderID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="34">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="Amount" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="34">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="PaymentMethod" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="34">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="PaymentStatus" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="34">
+          <mxGeometry y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="TransactionID" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="34">
+          <mxGeometry y="180" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Category Entity -->
+        <mxCell id="41" value="Category" style="swimlane;html=1;fillColor=#F8D7DA;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="CategoryID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="41">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="Name" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="41">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="Description" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="41">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Review Entity -->
+        <mxCell id="45" value="Review" style="swimlane;html=1;fillColor=#FFF3CD;" vertex="1" parent="1">
+          <mxGeometry x="740" y="20" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="ReviewID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="45">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="ProductID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="45">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="CustomerID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="45">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="Rating" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="45">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="Comment" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="45">
+          <mxGeometry y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Wishlist Entity -->
+        <mxCell id="51" value="Wishlist" style="swimlane;html=1;fillColor=#D1C4E9;" vertex="1" parent="1">
+          <mxGeometry x="740" y="320" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="WishlistID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="51">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="CustomerID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="51">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="ProductID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="51">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Coupon Entity -->
+        <mxCell id="55" value="Coupon" style="swimlane;html=1;fillColor=#E1BEE7;" vertex="1" parent="1">
+          <mxGeometry x="980" y="20" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="CouponID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="55">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="Code" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="55">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="Discount" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="55">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Shipping Entity -->
+        <mxCell id="59" value="Shipping" style="swimlane;html=1;fillColor=#BBDEFB;" vertex="1" parent="1">
+          <mxGeometry x="980" y="320" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="ShippingID (PK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="59">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="OrderID (FK)" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="59">
+          <mxGeometry y="60" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="TrackingNumber" style          ="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="59">
+          <mxGeometry y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="ShippingDate" style="text;strokeColor=none;fillColor=none;html=1;" vertex="1" parent="59">
+          <mxGeometry y="120" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <!-- Customer-Product (Wishlist) Relationship -->
+        <mxCell id="64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Customer-Review Relationship -->
+        <mxCell id="65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Category-Product Relationship -->
+        <mxCell id="66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="41" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Product-OrderItem Relationship -->
+        <mxCell id="67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="11" target="28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Order-OrderItem Relationship -->
+        <mxCell id="68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="20" target="28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Customer-Order Relationship -->
+        <mxCell id="69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Order-Payment Relationship -->
+        <mxCell id="70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="20" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Order-Shipping Relationship -->
+        <mxCell id="71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="20" target="59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Customer-Wishlist Relationship -->
+        <mxCell id="72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Product-Review Relationship -->
+        <mxCell id="73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="11" target="45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Coupon-Order Relationship -->
+        <mxCell id="74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="55" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Layout -->
+        <mxCell id="75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="11" target="28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="20" target="34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="20" target="59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
