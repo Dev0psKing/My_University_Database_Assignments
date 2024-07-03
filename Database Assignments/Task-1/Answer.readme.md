@@ -1,3 +1,4 @@
+
 ### Explanation
 * Primary Keys uniquely identify each record in a table.
 * Foreign Keys establish relationships between tables, linking records from one table to records in another.
