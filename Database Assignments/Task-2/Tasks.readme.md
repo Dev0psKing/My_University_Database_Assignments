@@ -1,5 +1,6 @@
 # Database Normalization Problem
 
+
 Given the following unnormalized relation representing a library database:
 
 **Books (Book_ID, Title, Author, Genre, Publisher, Publication_Year, ISBN, Price)**
